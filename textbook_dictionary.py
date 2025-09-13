@@ -19,7 +19,7 @@ while True:
     print("type 1 to edit an existing textbook's price.")
     print("type 2 to create a new textbook, also updating the list of textbooks.")
     print("type 3 to check if a certain textbook is in the shop, if it is, the price of the textbook will be listed.")
-    print("type 4 to end.")
+    print("type 4 to leave.")
     
     choice = int(input("type a number between 1 and 4 "))
 
@@ -33,7 +33,7 @@ while True:
             print("this textbook is not in the shop")
 
     if choice == 2:
-        textbook = input("type the name of the textbook you would like to add")
+        textbook = input("type the name of the textbook you would like to add ")
         textbook_price = int(input("type the price of the textbook you would like to add "))
         textbooks[textbook] = textbook_price
         user_textbook = textbooks['textbook']
@@ -47,7 +47,7 @@ while True:
         else:
             print("this textbook is either not in the shop or you misspelt it, try a different name?")
     if choice == 4:
-        print("the shop is closing, thank you and goodbye.")
+        print("thank you and goodbye.")
         break
     
     else:
